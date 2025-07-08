@@ -82,7 +82,7 @@ export default function HomeScreen() {
             style={styles.cell}
             onPress={() => handleCellPress(index)}
           >
-            <Text style={styles.cellText}>{value}</Text>
+            <Text style={[styles.cellText, getSymbolStyle(value)]}>{value}</Text>
           </TouchableOpacity>
         ))}
       </View>
